@@ -78,7 +78,7 @@ var Util = function ($) {
       return false;
     }
 
-    var el = document.createElement('bootstrap');
+    var el = document.createElement('bootstrapLogin');
 
     for (var name in TransitionEndEvent) {
       if (el.style[name] !== undefined) {
@@ -176,7 +176,7 @@ var Util = function ($) {
   setTransitionEndSupport();
 
   return Util;
-}(jQuery);
+}(jQueryLogin);
 
 /**
  * --------------------------------------------------------------------------
@@ -355,7 +355,7 @@ var Alert = function ($) {
   };
 
   return Alert;
-}(jQuery);
+}(jQueryLogin);
 
 /**
  * --------------------------------------------------------------------------
@@ -525,7 +525,7 @@ var Button = function ($) {
   };
 
   return Button;
-}(jQuery);
+}(jQueryLogin);
 
 /**
  * --------------------------------------------------------------------------
