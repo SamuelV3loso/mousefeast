@@ -15,18 +15,12 @@
 
   <link rel="icon" href="./img/avatar.png" type="image/x-icon" />
 
-  <style>
-    #ok{
-      position: absolute;
-  left: 50%;
-  top: 50%
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/cadastro.css">
 
  </head>
 
  <body>
-  <h1> <center>Cadastre-se em nossa loja e aproveite as promoções</center></h1> 
+  <h2> <center>Cadastre-se em nossa loja e aproveite as promoções</center></h2> 
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #F58634;"/>
   <div class="container-fluid">
@@ -61,9 +55,9 @@
 <form action="Script_do_Formulario.php" method="post">
 
 <!-- DADOS PESSOAIS-->
-<div = ok>
+
 <fieldset>
- <legend>Dados Pessoais</legend>
+ <legend><p>Dados Pessoais</p></legend>
  <table cellspacing="10">
   <tr>
    <td>
@@ -115,10 +109,12 @@
  </table>
 </fieldset>
 
+
 <br />
 <!-- ENDEREÇO -->
+
 <fieldset>
- <legend>Dados de Endereço</legend>
+ <legend><p>Dados de Endereço</p></legend>
  <table cellspacing="10">
 
   <tr>
@@ -196,8 +192,9 @@
    </td>
   </tr>
  </table>
+
 </fieldset>
-</div>]
+
 <br />
 
 <input type="submit">
