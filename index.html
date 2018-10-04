@@ -16,6 +16,50 @@
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrapLogin/css/bootstrap.min.css" rel="stylesheet">
 
+	<style type="text/css">
+		.dropbtn {
+		    background-color: #F58634;
+		    color: white;
+		    padding: 10px;
+		    font-size: 16px;
+		    border: none;
+		}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		    position: relative;
+		    display: inline-block;
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f1f1f1;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #ff994f; color: white}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block; }
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {background-color: #ff994f;
+		}
+	</style>
+
 	<!-- Custom styles for this template -->
 	<link href="css/round-about.css" rel="stylesheet">
 
@@ -28,25 +72,65 @@
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #F58634;"/>
 		<div class="container-fluid">
-			<img class="navbar-brand" style="margin: -41px; height: 70px" src="./img/logo.png">
+			<a href="./index.html">
+				<img class="navbar-brand" style="margin: -41px; height: 75px" src="./img/logo.png">
+			</a>
+
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
+
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home
+						<a href="#">
+							<div class="dropdown">
+							  <button class="dropbtn">Meus Produtos</button>
+							  <div class="dropdown-content">
+							    <a href="#">Pedidos</a>
+							    <a href="#">Rastrear Compra</a>
+							    <a href="#">Favoritos</a>
+							  </div>
+							</div>
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./sobre.html">Sobre</a>
+						<a href="./sobre.html">
+							<div class="dropdown">
+							  <button class="dropbtn">Sobre</button>
+							  <div class="dropdown-content">
+							    <a href="#">Link 1</a>
+							    <a href="#">Link 2</a>
+							    <a href="#">Link 3</a>
+							  </div>
+							</div>
+						</a>
 					</li>
 					<li class="nav-item">
-					<a class="nav-link" href="#">Carrinho</a>
+						<a href="#">
+							<div class="dropdown">
+							  <button class="dropbtn">Carrinho</button>
+							  <div class="dropdown-content">
+							    <a href="#">Link 1</a>
+							    <a href="#">Link 2</a>
+							    <a href="#">Link 3</a>
+							  </div>
+							</div>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./login.html">Conta</a>
+						<a href="./login.html">
+							<div class="dropdown">
+								  <button class="dropbtn">Conta</button>
+								  <div class="dropdown-content">
+								    <a href="#">Editar conta</a>
+								    <a href="#">Ver perfil</a>
+								    <a href="#">Favoritos</a>
+								     <a href="#">Meus produtos</a>
+								  </div>
+							</div>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -55,6 +139,8 @@
 
 	<!-- Page Content -->
 	<div class="container-fluid">
+
+		
 
 		<br><br>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -95,6 +181,7 @@
 
 	<br>
 
+	
 
 	<div id="principal">
 		<div class="container">
@@ -134,13 +221,14 @@
 			</div>
 		</div>
 	</div>
-
-
+	
 	<br>
+
+
 	<!-- Footer -->
 	<footer class="py-5 bg-dark">
 		<div class="container">
-			<p class="m-0 text-center text-white">Mouse Feast</p>
+			<a href="./sobre.html"><p class="m-0 text-center text-white">Sobre nós</p></a>
 		</div>
 	<!-- /.container -->
 	</footer>
